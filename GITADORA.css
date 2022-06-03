@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+body{
+    font-family: serif;
+    background-color:white;
+
+}
+
+*,*::before, *::after{
+    box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+header{
+    text-align: center;
+
+}
+
+.textanimation{
+    color: #000;
+    font-size: 70px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+@keyframes showTextFromButton { 
+0%{
+  opacity: 0;
+  transform: translateY(30px);
+}
+100%{
+  opacity: 1;
+}
+}
+@keyframes showTextFromTop { 
+  0%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 1;
+  }
+  }
+
+.textanimation span{
+  display: inline-block;
+  animation: showText 2s backwards;
+
+}
+.textanimation span:nth-of-type(even){
+  animation: showTextFromTop 2s ease-in-out backwards;
+  
+}
+.textanimation span:nth-of-type(odd){
+  animation: showTextFromButton 2s ease-in-out backwards;
+  
+}
+
+dd{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+}
+dl{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 1.25rem;
+
+}
+
+
+div{
+    padding: 4px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: blue;
+}
+
+.introduction div.V{
+    position: relative;
+
+ }
+
+.introduction div.V:after{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    display: inline-block;
+    pointer-events: none;
+    width: 300px;
+    height: 150px;
+
+  }
+
+  .introduction div.V:hover:after{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Gfv3anddmv3_.jpg/480px-Gfv3anddmv3_.jpg); /* 表示する画像 */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 1;
+    transform: none;
+    transition: 2s;
+
+  }
+ 
+  .introduction div.XG{
+    position: relative;
+
+ }
+
+.introduction div.XG:after{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom:-25px;
+    left: 250px;
+    display: inline-block;
+    pointer-events: none;
+    width: 300px;
+    height: 150px;
+
+  }
+
+  .introduction div.XG:hover:after{
+    background: url(https://livlyislandvicecity.c.blog.ss-blog.jp/_images/blog/_b3b/livlyIslandvicecity/7.jpg); /* 表示する画像 */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 1;
+    transform: none;
+    transition: 2s;
+
+  }
+  .introduction div.XG2{
+    position: relative;
+
+ }
+
+.introduction div.XG2:after{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom:-75px;
+    left: 250px;
+    display: inline-block;
+    pointer-events: none;
+    width: 300px;
+    height: 150px;
+
+  }
+
+  .introduction div.XG2:hover:after{
+    
+    background: url(https://www.famitsu.com/news/201105/images/00044332/yYOa9LVFdpBoMhEN1xAXWzH4oGhPITu6.jpg); /* 表示する画像 */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 1;
+    transform: none;
+    transition: 2s;
+    
+
+  }
+  .introduction div.XG3{
+    position: relative;
+
+ }
+
+.introduction div.XG3:after{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom:-80px;
+    left: 280px;
+    display: inline-block;
+    pointer-events: none;
+    width: 300px;
+    height: 150px;
+
+  }
+
+  .introduction div.XG3:hover:after{
+    
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYiJEMgQexU7c7F_D7RJYz_7-CsbKcJc1WQ&usqp=CAU); /* 表示する画像 */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 1;
+    transform: none;
+    transition: 2s;
+    
+
+  }
+
+  .introduction div.GITADORA{
+    position: relative;
+
+ }
+
+.introduction div.GITADORA:after{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom:-50px;
+    left: 400px;
+    display: inline-block;
+    pointer-events: none;
+    width: 300px;
+    height: 150px;
+  }
+
+  p{
+    font-size: 1.25rem;
+}
+
